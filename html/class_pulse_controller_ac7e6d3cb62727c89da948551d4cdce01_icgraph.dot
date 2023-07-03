@@ -1,0 +1,18 @@
+digraph "PulseController::getInstance"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node28 [label="PulseController::getInstance",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node28 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="CLIManager::CLIManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_l_i_manager.html#aa6a57394f40679877ef36f4e8fbcd2bf"];
+  Node29 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="CLIManager::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_l_i_manager.html#a30fd449e0fea9cf14f56bf1ae17934ce"];
+  Node30 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="Initer::GeneralInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_initer.html#a088e4b7a4395c32a5bbe932c3db35054"];
+  Node31 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",tooltip="main "];
+  Node28 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="ValuesController::Values\lController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_values_controller.html#a9d8f277bbf71b14581286225e81d4c93"];
+}

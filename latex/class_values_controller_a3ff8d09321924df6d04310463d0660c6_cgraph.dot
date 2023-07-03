@@ -1,0 +1,9 @@
+digraph "ValuesController::composeMessage"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16 [label="ValuesController::compose\lMessage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="BinMessage::addValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bin_message.html#a47cc1e9c538f05361522883989ec3d96"];
+}

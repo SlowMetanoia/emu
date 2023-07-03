@@ -1,0 +1,11 @@
+digraph "ValuesController::publishValues"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node44 [label="ValuesController::publish\lValues",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node44 -> Node45 [color="midnightblue",fontsize="10",style="solid"];
+  Node45 [label="ValuesController::compose\lMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_values_controller.html#a3ff8d09321924df6d04310463d0660c6"];
+  Node45 -> Node46 [color="midnightblue",fontsize="10",style="solid"];
+  Node46 [label="BinMessage::addValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bin_message.html#a47cc1e9c538f05361522883989ec3d96"];
+}

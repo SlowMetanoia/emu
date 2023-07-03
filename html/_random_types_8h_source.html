@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Imitator: Исходный файл RandomTypes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Imitator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">RandomTypes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_random_types_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RANDOMTYPES_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RANDOMTYPES_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60">    4</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60">RandomDistributionType</a>{</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a4eea854f845069c27894a2f425c109f3">    5</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a4eea854f845069c27894a2f425c109f3">Norm</a>,</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a5a9e3347876551cd38b961213ff1ccde">    6</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a5a9e3347876551cd38b961213ff1ccde">Flat</a>,</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60ab9f6920de535f04ccfe34d670fa2c8a8">    7</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60ab9f6920de535f04ccfe34d670fa2c8a8">Zero</a>,</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a4e81c184ac3ad48a389cd4454c4a05bb">    8</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a4e81c184ac3ad48a389cd4454c4a05bb">Unknown</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;};</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149">   11</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149">RandomParametrType</a>{</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aefcb6a24ceca1d8c8cf185c87c7f2e28">   12</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aefcb6a24ceca1d8c8cf185c87c7f2e28">Expectation</a>,</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aaff9b7132f214f75dc24f775055355fa">   13</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aaff9b7132f214f75dc24f775055355fa">Variance</a>,</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149a9d4d8b0b72fc2659da772d761a3c5ecb">   14</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149a9d4d8b0b72fc2659da772d761a3c5ecb">Left</a>,</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149ad48f7af8c070184f3774c8e85854eb66">   15</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149ad48f7af8c070184f3774c8e85854eb66">Right</a>,</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aa6346545ee7955ddc811109b07ea08b0">   16</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aa6346545ee7955ddc811109b07ea08b0">Illegal</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1">   19</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1">ValueType</a>{</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a637b69dea56f804278aa50e975337e01">   20</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a637b69dea56f804278aa50e975337e01">Int</a>,</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1ac837bff23a12c3735d463020f37979de">   21</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1ac837bff23a12c3735d463020f37979de">Unsigned</a>,</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1ad67b0ee7230dcecb610254e4e5e589cd">   22</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1ad67b0ee7230dcecb610254e4e5e589cd">Float</a>,</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a3045f33dbb706dfcf7d3467ec6e685af">   23</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a3045f33dbb706dfcf7d3467ec6e685af">Time</a>,</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a18f893264a00711081b62de694f99db4">   24</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a18f893264a00711081b62de694f99db4">Undefined</a></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfd">   27</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfd">ScenarioType</a>{</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfdae5620da7bc6a4390b36a2d6bede3213e">   28</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfdae5620da7bc6a4390b36a2d6bede3213e">Journal</a>,</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfda0f89e337240e49bbe29a415c4655546a">   29</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfda0f89e337240e49bbe29a415c4655546a">Modbus</a>,</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfdac39207bbda0d1b98dc89636a45d61221">   30</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfdac39207bbda0d1b98dc89636a45d61221">Socket</a>,</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfda3627e989f5a51a72c4f072a49ebf2862">   31</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfda3627e989f5a51a72c4f072a49ebf2862">Fake</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif // RANDOMTYPES_H</span></div><div class="ttc" id="_random_types_8h_html_ad9971b6ef33e02ba2c75d19c1d2518a1"><div class="ttname"><a href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1">ValueType</a></div><div class="ttdeci">ValueType</div><div class="ttdef"><b>Definition:</b> RandomTypes.h:19</div></div>
+<div class="ttc" id="_random_types_8h_html_ad7b55c73a22b009b1551ea87b0955a60a5a9e3347876551cd38b961213ff1ccde"><div class="ttname"><a href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a5a9e3347876551cd38b961213ff1ccde">Flat</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:6</div></div>
+<div class="ttc" id="_random_types_8h_html_ad9971b6ef33e02ba2c75d19c1d2518a1ac837bff23a12c3735d463020f37979de"><div class="ttname"><a href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1ac837bff23a12c3735d463020f37979de">Unsigned</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:21</div></div>
+<div class="ttc" id="_random_types_8h_html_ae108afd6d00a3eb3fe79cd02076d2149ad48f7af8c070184f3774c8e85854eb66"><div class="ttname"><a href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149ad48f7af8c070184f3774c8e85854eb66">Right</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:15</div></div>
+<div class="ttc" id="_random_types_8h_html_ad9971b6ef33e02ba2c75d19c1d2518a1a18f893264a00711081b62de694f99db4"><div class="ttname"><a href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a18f893264a00711081b62de694f99db4">Undefined</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:24</div></div>
+<div class="ttc" id="_random_types_8h_html_ad7b55c73a22b009b1551ea87b0955a60a4eea854f845069c27894a2f425c109f3"><div class="ttname"><a href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a4eea854f845069c27894a2f425c109f3">Norm</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:5</div></div>
+<div class="ttc" id="_random_types_8h_html_ae108afd6d00a3eb3fe79cd02076d2149a9d4d8b0b72fc2659da772d761a3c5ecb"><div class="ttname"><a href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149a9d4d8b0b72fc2659da772d761a3c5ecb">Left</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:14</div></div>
+<div class="ttc" id="_random_types_8h_html_ad7b55c73a22b009b1551ea87b0955a60ab9f6920de535f04ccfe34d670fa2c8a8"><div class="ttname"><a href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60ab9f6920de535f04ccfe34d670fa2c8a8">Zero</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:7</div></div>
+<div class="ttc" id="_random_types_8h_html_ae8f073eec97d33cf9783ecbe50531dfda3627e989f5a51a72c4f072a49ebf2862"><div class="ttname"><a href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfda3627e989f5a51a72c4f072a49ebf2862">Fake</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:31</div></div>
+<div class="ttc" id="_random_types_8h_html_ad9971b6ef33e02ba2c75d19c1d2518a1a3045f33dbb706dfcf7d3467ec6e685af"><div class="ttname"><a href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a3045f33dbb706dfcf7d3467ec6e685af">Time</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:23</div></div>
+<div class="ttc" id="_random_types_8h_html_ae8f073eec97d33cf9783ecbe50531dfd"><div class="ttname"><a href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfd">ScenarioType</a></div><div class="ttdeci">ScenarioType</div><div class="ttdef"><b>Definition:</b> RandomTypes.h:27</div></div>
+<div class="ttc" id="_random_types_8h_html_ae8f073eec97d33cf9783ecbe50531dfdae5620da7bc6a4390b36a2d6bede3213e"><div class="ttname"><a href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfdae5620da7bc6a4390b36a2d6bede3213e">Journal</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:28</div></div>
+<div class="ttc" id="_random_types_8h_html_ae8f073eec97d33cf9783ecbe50531dfda0f89e337240e49bbe29a415c4655546a"><div class="ttname"><a href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfda0f89e337240e49bbe29a415c4655546a">Modbus</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:29</div></div>
+<div class="ttc" id="_random_types_8h_html_ae108afd6d00a3eb3fe79cd02076d2149"><div class="ttname"><a href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149">RandomParametrType</a></div><div class="ttdeci">RandomParametrType</div><div class="ttdef"><b>Definition:</b> RandomTypes.h:11</div></div>
+<div class="ttc" id="_random_types_8h_html_ad9971b6ef33e02ba2c75d19c1d2518a1a637b69dea56f804278aa50e975337e01"><div class="ttname"><a href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1a637b69dea56f804278aa50e975337e01">Int</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:20</div></div>
+<div class="ttc" id="_random_types_8h_html_ad7b55c73a22b009b1551ea87b0955a60a4e81c184ac3ad48a389cd4454c4a05bb"><div class="ttname"><a href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60a4e81c184ac3ad48a389cd4454c4a05bb">Unknown</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:8</div></div>
+<div class="ttc" id="_random_types_8h_html_ae108afd6d00a3eb3fe79cd02076d2149aefcb6a24ceca1d8c8cf185c87c7f2e28"><div class="ttname"><a href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aefcb6a24ceca1d8c8cf185c87c7f2e28">Expectation</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:12</div></div>
+<div class="ttc" id="_random_types_8h_html_ae108afd6d00a3eb3fe79cd02076d2149aaff9b7132f214f75dc24f775055355fa"><div class="ttname"><a href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aaff9b7132f214f75dc24f775055355fa">Variance</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:13</div></div>
+<div class="ttc" id="_random_types_8h_html_ae108afd6d00a3eb3fe79cd02076d2149aa6346545ee7955ddc811109b07ea08b0"><div class="ttname"><a href="_random_types_8h.html#ae108afd6d00a3eb3fe79cd02076d2149aa6346545ee7955ddc811109b07ea08b0">Illegal</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:16</div></div>
+<div class="ttc" id="_random_types_8h_html_ad7b55c73a22b009b1551ea87b0955a60"><div class="ttname"><a href="_random_types_8h.html#ad7b55c73a22b009b1551ea87b0955a60">RandomDistributionType</a></div><div class="ttdeci">RandomDistributionType</div><div class="ttdef"><b>Definition:</b> RandomTypes.h:4</div></div>
+<div class="ttc" id="_random_types_8h_html_ae8f073eec97d33cf9783ecbe50531dfdac39207bbda0d1b98dc89636a45d61221"><div class="ttname"><a href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfdac39207bbda0d1b98dc89636a45d61221">Socket</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:30</div></div>
+<div class="ttc" id="_random_types_8h_html_ad9971b6ef33e02ba2c75d19c1d2518a1ad67b0ee7230dcecb610254e4e5e589cd"><div class="ttname"><a href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1ad67b0ee7230dcecb610254e4e5e589cd">Float</a></div><div class="ttdef"><b>Definition:</b> RandomTypes.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,38 @@
+digraph "OutManager::init"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node36 [label="OutManager::init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node36 -> Node37 [color="midnightblue",fontsize="10",style="solid"];
+  Node37 [label="OutManager::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#a25e2f6c90af51feae79e8233d9e746cd"];
+  Node37 -> Node38 [color="midnightblue",fontsize="10",style="solid"];
+  Node38 [label="OutManager::OutManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#ab33060397abec259ec6579469aef1c8e"];
+  Node38 -> Node39 [color="midnightblue",fontsize="10",style="solid"];
+  Node39 [label="JournalWriter::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_journal_writer.html#adc9e15e0d3114eba2658afc48c4c44a4"];
+  Node39 -> Node40 [color="midnightblue",fontsize="10",style="solid"];
+  Node40 [label="JournalWriter::JournalWriter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_journal_writer.html#ae35ea91e1a2e0b87fdb45826bfde47b6"];
+  Node38 -> Node41 [color="midnightblue",fontsize="10",style="solid"];
+  Node41 [label="SocketWriter::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_socket_writer.html#a071c5c35fb17e082429eb9ebb1fcf5c9"];
+  Node41 -> Node42 [color="midnightblue",fontsize="10",style="solid"];
+  Node42 [label="SocketWriter::SocketWriter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_socket_writer.html#a465ef4c5ff900319f058d82f2305d85e"];
+  Node38 -> Node43 [color="midnightblue",fontsize="10",style="solid"];
+  Node43 [label="ValuesController::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_values_controller.html#a2b7b09d37db8c1cf82d35024254b5628"];
+  Node38 -> Node44 [color="midnightblue",fontsize="10",style="solid"];
+  Node44 [label="OutManager::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#a04f085f9812ba6d105a8d13344f1ba8f"];
+  Node44 -> Node45 [color="midnightblue",fontsize="10",style="solid"];
+  Node45 [label="OutManager::writeJournal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#a72350f29d5beb0ddcbf14071b4d609a8"];
+  Node45 -> Node43 [color="midnightblue",fontsize="10",style="solid"];
+  Node45 -> Node46 [color="midnightblue",fontsize="10",style="solid"];
+  Node46 [label="ValuesController::compose\lMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_values_controller.html#a3ff8d09321924df6d04310463d0660c6"];
+  Node46 -> Node47 [color="midnightblue",fontsize="10",style="solid"];
+  Node47 [label="BinMessage::addValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bin_message.html#a47cc1e9c538f05361522883989ec3d96"];
+  Node45 -> Node48 [color="midnightblue",fontsize="10",style="solid"];
+  Node48 [label="JournalWriter::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_journal_writer.html#a635b3ca7a9ecc19b1827fa0e98bc09f6"];
+  Node44 -> Node49 [color="midnightblue",fontsize="10",style="solid"];
+  Node49 [label="OutManager::writeSocket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#a754a7835198dacb9a0dffcc772cdd454"];
+  Node49 -> Node43 [color="midnightblue",fontsize="10",style="solid"];
+  Node49 -> Node46 [color="midnightblue",fontsize="10",style="solid"];
+  Node49 -> Node50 [color="midnightblue",fontsize="10",style="solid"];
+  Node50 [label="SocketWriter::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_socket_writer.html#a64eb590cc3343ca1072ca2896ec9a7ce"];
+}

@@ -1,0 +1,27 @@
+digraph "CLIManager::CLIManager"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="CLIManager::CLIManager",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="PulseController::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#ac7e6d3cb62727c89da948551d4cdce01"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PulseController::PulseController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#aa17fed7626e6483413beff386f0e532a"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PulseGenerator::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_generator.html#ace9e6e44b3fcd3103b65805d44261ced"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PulseGenerator::PulseGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_generator.html#aff7b38fa92c5f1181cbeca42c62c7b21"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PulseController::gotNewPulse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#ada3a07fc7a533e76d0d91e2e8c31e75e"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PulseController::calcTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#aad89e956185b04ed12bd02056e4df743"];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="PulseController::start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#a278aefbf7233ae529304a012c4690827"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="PulseController::stop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#abc95e9340203f77f78818f389bd99d3a"];
+  Node0 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="PulseController::pause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#a310f792764a804b50a910eeb4e53a374"];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="PulseController::reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#a0112f4a30c50e9254e8e264f5b1ba865"];
+}

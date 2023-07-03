@@ -1,0 +1,144 @@
+\hypertarget{_random_types_8h}{}\section{Файл Random\+Types.\+h}
+\label{_random_types_8h}\index{Random\+Types.\+h@{Random\+Types.\+h}}
+Граф файлов, в которые включается этот файл\+:
+% FIG 0
+\subsection*{Перечисления}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60}{Random\+Distribution\+Type} \{ \hyperlink{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a4eea854f845069c27894a2f425c109f3}{Norm}, 
+\hyperlink{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a5a9e3347876551cd38b961213ff1ccde}{Flat}, 
+\hyperlink{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60ab9f6920de535f04ccfe34d670fa2c8a8}{Zero}, 
+\hyperlink{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a4e81c184ac3ad48a389cd4454c4a05bb}{Unknown}
+ \}
+\item 
+enum \hyperlink{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149}{Random\+Parametr\+Type} \{ \newline
+\hyperlink{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aefcb6a24ceca1d8c8cf185c87c7f2e28}{Expectation}, 
+\hyperlink{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aaff9b7132f214f75dc24f775055355fa}{Variance}, 
+\hyperlink{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149a9d4d8b0b72fc2659da772d761a3c5ecb}{Left}, 
+\hyperlink{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149ad48f7af8c070184f3774c8e85854eb66}{Right}, 
+\newline
+\hyperlink{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aa6346545ee7955ddc811109b07ea08b0}{Illegal}
+ \}
+\item 
+enum \hyperlink{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}{Value\+Type} \{ \newline
+\hyperlink{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a637b69dea56f804278aa50e975337e01}{Int}, 
+\hyperlink{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ac837bff23a12c3735d463020f37979de}{Unsigned}, 
+\hyperlink{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ad67b0ee7230dcecb610254e4e5e589cd}{Float}, 
+\hyperlink{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a3045f33dbb706dfcf7d3467ec6e685af}{Time}, 
+\newline
+\hyperlink{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a18f893264a00711081b62de694f99db4}{Undefined}
+ \}
+\item 
+enum \hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}{Scenario\+Type} \{ \hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfdae5620da7bc6a4390b36a2d6bede3213e}{Journal}, 
+\hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfda0f89e337240e49bbe29a415c4655546a}{Modbus}, 
+\hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfdac39207bbda0d1b98dc89636a45d61221}{Socket}, 
+\hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfda3627e989f5a51a72c4f072a49ebf2862}{Fake}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Перечисления}
+\mbox{\Hypertarget{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60}\label{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60}} 
+\index{Random\+Types.\+h@{Random\+Types.\+h}!Random\+Distribution\+Type@{Random\+Distribution\+Type}}
+\index{Random\+Distribution\+Type@{Random\+Distribution\+Type}!Random\+Types.\+h@{Random\+Types.\+h}}
+\subsubsection{\texorpdfstring{Random\+Distribution\+Type}{RandomDistributionType}}
+{\footnotesize\ttfamily enum \hyperlink{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60}{Random\+Distribution\+Type}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Norm@{Norm}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Norm@{Norm}}}\mbox{\Hypertarget{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a4eea854f845069c27894a2f425c109f3}\label{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a4eea854f845069c27894a2f425c109f3}} 
+Norm&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Flat@{Flat}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Flat@{Flat}}}\mbox{\Hypertarget{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a5a9e3347876551cd38b961213ff1ccde}\label{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a5a9e3347876551cd38b961213ff1ccde}} 
+Flat&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zero@{Zero}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Zero@{Zero}}}\mbox{\Hypertarget{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60ab9f6920de535f04ccfe34d670fa2c8a8}\label{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60ab9f6920de535f04ccfe34d670fa2c8a8}} 
+Zero&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unknown@{Unknown}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Unknown@{Unknown}}}\mbox{\Hypertarget{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a4e81c184ac3ad48a389cd4454c4a05bb}\label{_random_types_8h_ad7b55c73a22b009b1551ea87b0955a60a4e81c184ac3ad48a389cd4454c4a05bb}} 
+Unknown&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149}\label{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149}} 
+\index{Random\+Types.\+h@{Random\+Types.\+h}!Random\+Parametr\+Type@{Random\+Parametr\+Type}}
+\index{Random\+Parametr\+Type@{Random\+Parametr\+Type}!Random\+Types.\+h@{Random\+Types.\+h}}
+\subsubsection{\texorpdfstring{Random\+Parametr\+Type}{RandomParametrType}}
+{\footnotesize\ttfamily enum \hyperlink{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149}{Random\+Parametr\+Type}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Expectation@{Expectation}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Expectation@{Expectation}}}\mbox{\Hypertarget{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aefcb6a24ceca1d8c8cf185c87c7f2e28}\label{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aefcb6a24ceca1d8c8cf185c87c7f2e28}} 
+Expectation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Variance@{Variance}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Variance@{Variance}}}\mbox{\Hypertarget{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aaff9b7132f214f75dc24f775055355fa}\label{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aaff9b7132f214f75dc24f775055355fa}} 
+Variance&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Left@{Left}}}\mbox{\Hypertarget{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149a9d4d8b0b72fc2659da772d761a3c5ecb}\label{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149a9d4d8b0b72fc2659da772d761a3c5ecb}} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Right@{Right}}}\mbox{\Hypertarget{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149ad48f7af8c070184f3774c8e85854eb66}\label{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149ad48f7af8c070184f3774c8e85854eb66}} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Illegal@{Illegal}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Illegal@{Illegal}}}\mbox{\Hypertarget{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aa6346545ee7955ddc811109b07ea08b0}\label{_random_types_8h_ae108afd6d00a3eb3fe79cd02076d2149aa6346545ee7955ddc811109b07ea08b0}} 
+Illegal&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}\label{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}} 
+\index{Random\+Types.\+h@{Random\+Types.\+h}!Scenario\+Type@{Scenario\+Type}}
+\index{Scenario\+Type@{Scenario\+Type}!Random\+Types.\+h@{Random\+Types.\+h}}
+\subsubsection{\texorpdfstring{Scenario\+Type}{ScenarioType}}
+{\footnotesize\ttfamily enum \hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}{Scenario\+Type}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Journal@{Journal}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Journal@{Journal}}}\mbox{\Hypertarget{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfdae5620da7bc6a4390b36a2d6bede3213e}\label{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfdae5620da7bc6a4390b36a2d6bede3213e}} 
+Journal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Modbus@{Modbus}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Modbus@{Modbus}}}\mbox{\Hypertarget{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfda0f89e337240e49bbe29a415c4655546a}\label{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfda0f89e337240e49bbe29a415c4655546a}} 
+Modbus&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Socket@{Socket}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Socket@{Socket}}}\mbox{\Hypertarget{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfdac39207bbda0d1b98dc89636a45d61221}\label{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfdac39207bbda0d1b98dc89636a45d61221}} 
+Socket&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fake@{Fake}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Fake@{Fake}}}\mbox{\Hypertarget{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfda3627e989f5a51a72c4f072a49ebf2862}\label{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfda3627e989f5a51a72c4f072a49ebf2862}} 
+Fake&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}\label{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}} 
+\index{Random\+Types.\+h@{Random\+Types.\+h}!Value\+Type@{Value\+Type}}
+\index{Value\+Type@{Value\+Type}!Random\+Types.\+h@{Random\+Types.\+h}}
+\subsubsection{\texorpdfstring{Value\+Type}{ValueType}}
+{\footnotesize\ttfamily enum \hyperlink{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}{Value\+Type}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Int@{Int}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Int@{Int}}}\mbox{\Hypertarget{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a637b69dea56f804278aa50e975337e01}\label{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a637b69dea56f804278aa50e975337e01}} 
+Int&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unsigned@{Unsigned}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Unsigned@{Unsigned}}}\mbox{\Hypertarget{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ac837bff23a12c3735d463020f37979de}\label{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ac837bff23a12c3735d463020f37979de}} 
+Unsigned&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Float@{Float}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Float@{Float}}}\mbox{\Hypertarget{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ad67b0ee7230dcecb610254e4e5e589cd}\label{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ad67b0ee7230dcecb610254e4e5e589cd}} 
+Float&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Time@{Time}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Time@{Time}}}\mbox{\Hypertarget{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a3045f33dbb706dfcf7d3467ec6e685af}\label{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a3045f33dbb706dfcf7d3467ec6e685af}} 
+Time&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Undefined@{Undefined}!Random\+Types.\+h@{Random\+Types.\+h}}\index{Random\+Types.\+h@{Random\+Types.\+h}!Undefined@{Undefined}}}\mbox{\Hypertarget{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a18f893264a00711081b62de694f99db4}\label{_random_types_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a18f893264a00711081b62de694f99db4}} 
+Undefined&\\
+\hline
+
+\end{DoxyEnumFields}

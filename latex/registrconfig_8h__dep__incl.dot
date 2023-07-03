@@ -1,0 +1,38 @@
+digraph "registrconfig.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node6 [label="registrconfig.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="imitatorconfig.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$imitatorconfig_8h.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="configreader.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$configreader_8h.html"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="configreader.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$configreader_8cpp.html"];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="initer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$initer_8h.html"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="initer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$initer_8cpp.html"];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html"];
+  Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="imitatorconfig.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$imitatorconfig_8cpp.html"];
+  Node7 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="valuescontroller.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$valuescontroller_8h.html"];
+  Node14 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="outmanager.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$outmanager_8h.html"];
+  Node15 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="outmanager.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$outmanager_8cpp.html"];
+  Node14 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="valuescontroller.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$valuescontroller_8cpp.html"];
+  Node6 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="reggenerator.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$reggenerator_8h.html"];
+  Node18 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="reggenerator.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$reggenerator_8cpp.html"];
+  Node6 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="registrconfig.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$registrconfig_8cpp.html"];
+}

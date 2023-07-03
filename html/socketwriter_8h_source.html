@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Imitator: Исходный файл socketwriter.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Imitator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">socketwriter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="socketwriter_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SOCKETWRITER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SOCKETWRITER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QUdpSocket&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_socket_writer.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_socket_writer.html">SocketWriter</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_socket_writer.html#adb08a0fb11026b6321905d53eaf3a4cb">   11</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_socket_writer.html">SocketWriter</a>* <a class="code" href="class_socket_writer.html#adb08a0fb11026b6321905d53eaf3a4cb">writer</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_socket_writer.html">SocketWriter</a>* <a class="code" href="class_socket_writer.html#a071c5c35fb17e082429eb9ebb1fcf5c9">getInstance</a>();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_socket_writer.html#a5d43a4e3d17abbaff37887a174ef6c00">init</a>(QString <a class="code" href="class_socket_writer.html#aeee2a61724537288bb2cb96d257a24d6">addr</a>, <span class="keywordtype">int</span> <a class="code" href="class_socket_writer.html#a1fecba79e921d49c9ce5daa97e536121">port</a>);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_socket_writer.html#aeee2a61724537288bb2cb96d257a24d6">   16</a></span>&#160;    QHostAddress <a class="code" href="class_socket_writer.html#aeee2a61724537288bb2cb96d257a24d6">addr</a>;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_socket_writer.html#a1fecba79e921d49c9ce5daa97e536121">   17</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_socket_writer.html#a1fecba79e921d49c9ce5daa97e536121">port</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//QUdpSocket* socket;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_socket_writer.html#a64eb590cc3343ca1072ca2896ec9a7ce">write</a>(QByteArray data);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_socket_writer.html#a465ef4c5ff900319f058d82f2305d85e">SocketWriter</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;signals:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif // SOCKETWRITER_H</span></div><div class="ttc" id="class_socket_writer_html_a465ef4c5ff900319f058d82f2305d85e"><div class="ttname"><a href="class_socket_writer.html#a465ef4c5ff900319f058d82f2305d85e">SocketWriter::SocketWriter</a></div><div class="ttdeci">SocketWriter(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> socketwriter.cpp:11</div></div>
+<div class="ttc" id="class_socket_writer_html_a5d43a4e3d17abbaff37887a174ef6c00"><div class="ttname"><a href="class_socket_writer.html#a5d43a4e3d17abbaff37887a174ef6c00">SocketWriter::init</a></div><div class="ttdeci">static void init(QString addr, int port)</div><div class="ttdef"><b>Definition:</b> socketwriter.cpp:15</div></div>
+<div class="ttc" id="class_socket_writer_html"><div class="ttname"><a href="class_socket_writer.html">SocketWriter</a></div><div class="ttdef"><b>Definition:</b> socketwriter.h:7</div></div>
+<div class="ttc" id="class_socket_writer_html_a64eb590cc3343ca1072ca2896ec9a7ce"><div class="ttname"><a href="class_socket_writer.html#a64eb590cc3343ca1072ca2896ec9a7ce">SocketWriter::write</a></div><div class="ttdeci">void write(QByteArray data)</div><div class="ttdef"><b>Definition:</b> socketwriter.cpp:21</div></div>
+<div class="ttc" id="class_socket_writer_html_adb08a0fb11026b6321905d53eaf3a4cb"><div class="ttname"><a href="class_socket_writer.html#adb08a0fb11026b6321905d53eaf3a4cb">SocketWriter::writer</a></div><div class="ttdeci">static SocketWriter * writer</div><div class="ttdef"><b>Definition:</b> socketwriter.h:11</div></div>
+<div class="ttc" id="class_socket_writer_html_a1fecba79e921d49c9ce5daa97e536121"><div class="ttname"><a href="class_socket_writer.html#a1fecba79e921d49c9ce5daa97e536121">SocketWriter::port</a></div><div class="ttdeci">int port</div><div class="ttdef"><b>Definition:</b> socketwriter.h:17</div></div>
+<div class="ttc" id="class_socket_writer_html_aeee2a61724537288bb2cb96d257a24d6"><div class="ttname"><a href="class_socket_writer.html#aeee2a61724537288bb2cb96d257a24d6">SocketWriter::addr</a></div><div class="ttdeci">QHostAddress addr</div><div class="ttdef"><b>Definition:</b> socketwriter.h:16</div></div>
+<div class="ttc" id="class_socket_writer_html_a071c5c35fb17e082429eb9ebb1fcf5c9"><div class="ttname"><a href="class_socket_writer.html#a071c5c35fb17e082429eb9ebb1fcf5c9">SocketWriter::getInstance</a></div><div class="ttdeci">static SocketWriter * getInstance()</div><div class="ttdef"><b>Definition:</b> socketwriter.cpp:4</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,40 @@
+\hypertarget{class_c_l_i_manager}{}\section{C\+L\+I\+Manager Class Reference}
+\label{class_c_l_i_manager}\index{C\+L\+I\+Manager@{C\+L\+I\+Manager}}
+
+
+Inheritance diagram for C\+L\+I\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for C\+L\+I\+Manager\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_l_i_manager_aa6a57394f40679877ef36f4e8fbcd2bf}\label{class_c_l_i_manager_aa6a57394f40679877ef36f4e8fbcd2bf}} 
+{\bfseries C\+L\+I\+Manager} (Q\+Object $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_l_i_manager_a30fd449e0fea9cf14f56bf1ae17934ce}\label{class_c_l_i_manager_a30fd449e0fea9cf14f56bf1ae17934ce}} 
+static \hyperlink{class_c_l_i_manager}{C\+L\+I\+Manager} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_l_i_manager_a38a670e14413ab95cf6bb1a7e80696c0}\label{class_c_l_i_manager_a38a670e14413ab95cf6bb1a7e80696c0}} 
+Q\+Thread $\ast$ {\bfseries C\+L\+I\+Cycle}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_l_i_manager_a9f8d1e3fca086f03d5ee5ea6d89287ab}\label{class_c_l_i_manager_a9f8d1e3fca086f03d5ee5ea6d89287ab}} 
+static \hyperlink{class_c_l_i_manager}{C\+L\+I\+Manager} $\ast$ {\bfseries clim} = nullptr
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+climanager.\+h\item 
+climanager.\+cpp\end{DoxyCompactItemize}

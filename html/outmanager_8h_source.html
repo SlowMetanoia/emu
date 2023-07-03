@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Imitator: Исходный файл outmanager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Imitator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">outmanager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="outmanager_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OUTMANAGER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OUTMANAGER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_random_types_8h.html">RandomTypes.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="journalwriter_8h.html">journalwriter.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="socketwriter_8h.html">socketwriter.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="valuescontroller_8h.html">valuescontroller.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_out_manager.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_out_manager.html">OutManager</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_out_manager.html#ab33060397abec259ec6579469aef1c8e">OutManager</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_out_manager.html#a1b90e2e00620117028b2a14499b80f43">   16</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_out_manager.html">OutManager</a>* <a class="code" href="class_out_manager.html#a1b90e2e00620117028b2a14499b80f43">manager</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_out_manager.html">OutManager</a>* <a class="code" href="class_out_manager.html#a25e2f6c90af51feae79e8233d9e746cd">getInstance</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_out_manager.html#ab7c61a46bbb2cf29731a408ab5eb2b83">init</a>(<a class="code" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfd">ScenarioType</a> <a class="code" href="class_out_manager.html#ae9c258658580c48791cff6e5c3ad62af">scenario</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_out_manager.html#ae9c258658580c48791cff6e5c3ad62af">   22</a></span>&#160;    <a class="code" href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfd">ScenarioType</a> <a class="code" href="class_out_manager.html#ae9c258658580c48791cff6e5c3ad62af">scenario</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_out_manager.html#a754a7835198dacb9a0dffcc772cdd454">writeSocket</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_out_manager.html#a72350f29d5beb0ddcbf14071b4d609a8">writeJournal</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_out_manager.html#aa04ed17d925a73577e08152120e50339">writeModbus</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_out_manager.html#a58e0db7547fda26579600c443abc7af4">stopWriting</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//modbus</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//socket</span></div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_out_manager.html#a06df9af523b794582b5acb28906c811c">   32</a></span>&#160;    <a class="code" href="class_journal_writer.html">JournalWriter</a>* <a class="code" href="class_out_manager.html#a06df9af523b794582b5acb28906c811c">journalWriter</a>;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_out_manager.html#ad278fd7fd56625176399bedfee84a4bc">   33</a></span>&#160;    <a class="code" href="class_socket_writer.html">SocketWriter</a>* <a class="code" href="class_out_manager.html#ad278fd7fd56625176399bedfee84a4bc">socketWriter</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//SocketWriter</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//ModbusWriter</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_out_manager.html#a04f085f9812ba6d105a8d13344f1ba8f">write</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;signals:</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif // OUTMANAGER_H</span></div><div class="ttc" id="class_out_manager_html"><div class="ttname"><a href="class_out_manager.html">OutManager</a></div><div class="ttdef"><b>Definition:</b> outmanager.h:10</div></div>
+<div class="ttc" id="class_out_manager_html_aa04ed17d925a73577e08152120e50339"><div class="ttname"><a href="class_out_manager.html#aa04ed17d925a73577e08152120e50339">OutManager::writeModbus</a></div><div class="ttdeci">void writeModbus()</div></div>
+<div class="ttc" id="journalwriter_8h_html"><div class="ttname"><a href="journalwriter_8h.html">journalwriter.h</a></div></div>
+<div class="ttc" id="class_out_manager_html_ab33060397abec259ec6579469aef1c8e"><div class="ttname"><a href="class_out_manager.html#ab33060397abec259ec6579469aef1c8e">OutManager::OutManager</a></div><div class="ttdeci">OutManager(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> outmanager.cpp:10</div></div>
+<div class="ttc" id="valuescontroller_8h_html"><div class="ttname"><a href="valuescontroller_8h.html">valuescontroller.h</a></div></div>
+<div class="ttc" id="class_journal_writer_html"><div class="ttname"><a href="class_journal_writer.html">JournalWriter</a></div><div class="ttdef"><b>Definition:</b> journalwriter.h:13</div></div>
+<div class="ttc" id="class_out_manager_html_a06df9af523b794582b5acb28906c811c"><div class="ttname"><a href="class_out_manager.html#a06df9af523b794582b5acb28906c811c">OutManager::journalWriter</a></div><div class="ttdeci">JournalWriter * journalWriter</div><div class="ttdef"><b>Definition:</b> outmanager.h:32</div></div>
+<div class="ttc" id="socketwriter_8h_html"><div class="ttname"><a href="socketwriter_8h.html">socketwriter.h</a></div></div>
+<div class="ttc" id="class_socket_writer_html"><div class="ttname"><a href="class_socket_writer.html">SocketWriter</a></div><div class="ttdef"><b>Definition:</b> socketwriter.h:7</div></div>
+<div class="ttc" id="_random_types_8h_html_ae8f073eec97d33cf9783ecbe50531dfd"><div class="ttname"><a href="_random_types_8h.html#ae8f073eec97d33cf9783ecbe50531dfd">ScenarioType</a></div><div class="ttdeci">ScenarioType</div><div class="ttdef"><b>Definition:</b> RandomTypes.h:27</div></div>
+<div class="ttc" id="class_out_manager_html_a04f085f9812ba6d105a8d13344f1ba8f"><div class="ttname"><a href="class_out_manager.html#a04f085f9812ba6d105a8d13344f1ba8f">OutManager::write</a></div><div class="ttdeci">void write()</div><div class="ttdef"><b>Definition:</b> outmanager.cpp:39</div></div>
+<div class="ttc" id="class_out_manager_html_a72350f29d5beb0ddcbf14071b4d609a8"><div class="ttname"><a href="class_out_manager.html#a72350f29d5beb0ddcbf14071b4d609a8">OutManager::writeJournal</a></div><div class="ttdeci">void writeJournal()</div><div class="ttdef"><b>Definition:</b> outmanager.cpp:53</div></div>
+<div class="ttc" id="class_out_manager_html_a1b90e2e00620117028b2a14499b80f43"><div class="ttname"><a href="class_out_manager.html#a1b90e2e00620117028b2a14499b80f43">OutManager::manager</a></div><div class="ttdeci">static OutManager * manager</div><div class="ttdef"><b>Definition:</b> outmanager.h:16</div></div>
+<div class="ttc" id="_random_types_8h_html"><div class="ttname"><a href="_random_types_8h.html">RandomTypes.h</a></div></div>
+<div class="ttc" id="class_out_manager_html_a25e2f6c90af51feae79e8233d9e746cd"><div class="ttname"><a href="class_out_manager.html#a25e2f6c90af51feae79e8233d9e746cd">OutManager::getInstance</a></div><div class="ttdeci">static OutManager * getInstance()</div><div class="ttdef"><b>Definition:</b> outmanager.cpp:5</div></div>
+<div class="ttc" id="class_out_manager_html_ad278fd7fd56625176399bedfee84a4bc"><div class="ttname"><a href="class_out_manager.html#ad278fd7fd56625176399bedfee84a4bc">OutManager::socketWriter</a></div><div class="ttdeci">SocketWriter * socketWriter</div><div class="ttdef"><b>Definition:</b> outmanager.h:33</div></div>
+<div class="ttc" id="class_out_manager_html_ae9c258658580c48791cff6e5c3ad62af"><div class="ttname"><a href="class_out_manager.html#ae9c258658580c48791cff6e5c3ad62af">OutManager::scenario</a></div><div class="ttdeci">ScenarioType scenario</div><div class="ttdef"><b>Definition:</b> outmanager.h:22</div></div>
+<div class="ttc" id="class_out_manager_html_ab7c61a46bbb2cf29731a408ab5eb2b83"><div class="ttname"><a href="class_out_manager.html#ab7c61a46bbb2cf29731a408ab5eb2b83">OutManager::init</a></div><div class="ttdeci">static void init(ScenarioType scenario)</div><div class="ttdef"><b>Definition:</b> outmanager.cpp:17</div></div>
+<div class="ttc" id="class_out_manager_html_a754a7835198dacb9a0dffcc772cdd454"><div class="ttname"><a href="class_out_manager.html#a754a7835198dacb9a0dffcc772cdd454">OutManager::writeSocket</a></div><div class="ttdeci">void writeSocket()</div><div class="ttdef"><b>Definition:</b> outmanager.cpp:34</div></div>
+<div class="ttc" id="class_out_manager_html_a58e0db7547fda26579600c443abc7af4"><div class="ttname"><a href="class_out_manager.html#a58e0db7547fda26579600c443abc7af4">OutManager::stopWriting</a></div><div class="ttdeci">void stopWriting()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

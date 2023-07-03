@@ -1,0 +1,23 @@
+digraph "reggenerator.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node15 [label="reggenerator.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="valuescontroller.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$valuescontroller_8h.html"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="initer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$initer_8h.html"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="initer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$initer_8cpp.html"];
+  Node17 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html"];
+  Node16 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="outmanager.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$outmanager_8h.html"];
+  Node20 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="outmanager.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$outmanager_8cpp.html"];
+  Node16 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="valuescontroller.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$valuescontroller_8cpp.html"];
+  Node15 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="reggenerator.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$reggenerator_8cpp.html"];
+}

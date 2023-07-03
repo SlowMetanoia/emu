@@ -1,0 +1,117 @@
+\hypertarget{class_journal_writer}{}\section{Класс Journal\+Writer}
+\label{class_journal_writer}\index{Journal\+Writer@{Journal\+Writer}}
+
+
+{\ttfamily \#include $<$journalwriter.\+h$>$}
+
+
+
+Граф наследования\+:Journal\+Writer\+:
+% FIG 0
+
+
+Граф связей класса Journal\+Writer\+:
+% FIG 1
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_journal_writer_ae35ea91e1a2e0b87fdb45826bfde47b6}{Journal\+Writer} (Q\+Object $\ast$parent=nullptr)
+\item 
+void \hyperlink{class_journal_writer_af4ffa24f865f9aaa383a3d361b24cc79}{open\+Write\+File} (Q\+String filename)
+\item 
+void \hyperlink{class_journal_writer_a635b3ca7a9ecc19b1827fa0e98bc09f6}{write} (Q\+Byte\+Array data)
+\item 
+void \hyperlink{class_journal_writer_a4bb7c0e4159408a23874c56573dc2446}{close\+File} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_journal_writer}{Journal\+Writer} $\ast$ \hyperlink{class_journal_writer_adc9e15e0d3114eba2658afc48c4c44a4}{get\+Instance} ()
+\item 
+static Q\+String \hyperlink{class_journal_writer_a1762840b51e6631c7a6be80631e16e0e}{generate\+Name\+From\+Time} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+Q\+File \hyperlink{class_journal_writer_a4e2e6d2d0208bd4d168004cd9b403fd4}{output\+File}
+\end{DoxyCompactItemize}
+\subsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_journal_writer}{Journal\+Writer} $\ast$ \hyperlink{class_journal_writer_a45bf8cd477467fdc28964126438a071a}{journal\+Wirter} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_journal_writer_ae35ea91e1a2e0b87fdb45826bfde47b6}\label{class_journal_writer_ae35ea91e1a2e0b87fdb45826bfde47b6}} 
+\index{Journal\+Writer@{Journal\+Writer}!Journal\+Writer@{Journal\+Writer}}
+\index{Journal\+Writer@{Journal\+Writer}!Journal\+Writer@{Journal\+Writer}}
+\subsubsection{\texorpdfstring{Journal\+Writer()}{JournalWriter()}}
+{\footnotesize\ttfamily Journal\+Writer\+::\+Journal\+Writer (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Граф вызова функции\+:
+% FIG 2
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_journal_writer_a4bb7c0e4159408a23874c56573dc2446}\label{class_journal_writer_a4bb7c0e4159408a23874c56573dc2446}} 
+\index{Journal\+Writer@{Journal\+Writer}!close\+File@{close\+File}}
+\index{close\+File@{close\+File}!Journal\+Writer@{Journal\+Writer}}
+\subsubsection{\texorpdfstring{close\+File()}{closeFile()}}
+{\footnotesize\ttfamily void Journal\+Writer\+::close\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_journal_writer_a1762840b51e6631c7a6be80631e16e0e}\label{class_journal_writer_a1762840b51e6631c7a6be80631e16e0e}} 
+\index{Journal\+Writer@{Journal\+Writer}!generate\+Name\+From\+Time@{generate\+Name\+From\+Time}}
+\index{generate\+Name\+From\+Time@{generate\+Name\+From\+Time}!Journal\+Writer@{Journal\+Writer}}
+\subsubsection{\texorpdfstring{generate\+Name\+From\+Time()}{generateNameFromTime()}}
+{\footnotesize\ttfamily Q\+String Journal\+Writer\+::generate\+Name\+From\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Граф вызова функции\+:
+% FIG 3
+\mbox{\Hypertarget{class_journal_writer_adc9e15e0d3114eba2658afc48c4c44a4}\label{class_journal_writer_adc9e15e0d3114eba2658afc48c4c44a4}} 
+\index{Journal\+Writer@{Journal\+Writer}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Journal\+Writer@{Journal\+Writer}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{class_journal_writer}{Journal\+Writer} $\ast$ Journal\+Writer\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Граф вызовов\+:
+% FIG 4
+Граф вызова функции\+:
+% FIG 5
+\mbox{\Hypertarget{class_journal_writer_af4ffa24f865f9aaa383a3d361b24cc79}\label{class_journal_writer_af4ffa24f865f9aaa383a3d361b24cc79}} 
+\index{Journal\+Writer@{Journal\+Writer}!open\+Write\+File@{open\+Write\+File}}
+\index{open\+Write\+File@{open\+Write\+File}!Journal\+Writer@{Journal\+Writer}}
+\subsubsection{\texorpdfstring{open\+Write\+File()}{openWriteFile()}}
+{\footnotesize\ttfamily void Journal\+Writer\+::open\+Write\+File (\begin{DoxyParamCaption}\item[{Q\+String}]{filename }\end{DoxyParamCaption})}
+
+Граф вызова функции\+:
+% FIG 6
+\mbox{\Hypertarget{class_journal_writer_a635b3ca7a9ecc19b1827fa0e98bc09f6}\label{class_journal_writer_a635b3ca7a9ecc19b1827fa0e98bc09f6}} 
+\index{Journal\+Writer@{Journal\+Writer}!write@{write}}
+\index{write@{write}!Journal\+Writer@{Journal\+Writer}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Journal\+Writer\+::write (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array}]{data }\end{DoxyParamCaption})}
+
+Граф вызова функции\+:
+% FIG 7
+
+
+\subsection{Данные класса}
+\mbox{\Hypertarget{class_journal_writer_a45bf8cd477467fdc28964126438a071a}\label{class_journal_writer_a45bf8cd477467fdc28964126438a071a}} 
+\index{Journal\+Writer@{Journal\+Writer}!journal\+Wirter@{journal\+Wirter}}
+\index{journal\+Wirter@{journal\+Wirter}!Journal\+Writer@{Journal\+Writer}}
+\subsubsection{\texorpdfstring{journal\+Wirter}{journalWirter}}
+{\footnotesize\ttfamily \hyperlink{class_journal_writer}{Journal\+Writer} $\ast$ Journal\+Writer\+::journal\+Wirter = nullptr\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_journal_writer_a4e2e6d2d0208bd4d168004cd9b403fd4}\label{class_journal_writer_a4e2e6d2d0208bd4d168004cd9b403fd4}} 
+\index{Journal\+Writer@{Journal\+Writer}!output\+File@{output\+File}}
+\index{output\+File@{output\+File}!Journal\+Writer@{Journal\+Writer}}
+\subsubsection{\texorpdfstring{output\+File}{outputFile}}
+{\footnotesize\ttfamily Q\+File Journal\+Writer\+::output\+File}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{journalwriter_8h}{journalwriter.\+h}\item 
+\hyperlink{journalwriter_8cpp}{journalwriter.\+cpp}\end{DoxyCompactItemize}

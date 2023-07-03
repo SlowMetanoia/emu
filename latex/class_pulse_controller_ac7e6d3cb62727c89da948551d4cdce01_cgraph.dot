@@ -1,0 +1,17 @@
+digraph "PulseController::getInstance"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node22 [label="PulseController::getInstance",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node22 -> Node23 [color="midnightblue",fontsize="10",style="solid"];
+  Node23 [label="PulseController::PulseController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#aa17fed7626e6483413beff386f0e532a"];
+  Node23 -> Node24 [color="midnightblue",fontsize="10",style="solid"];
+  Node24 [label="PulseGenerator::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_generator.html#ace9e6e44b3fcd3103b65805d44261ced"];
+  Node24 -> Node25 [color="midnightblue",fontsize="10",style="solid"];
+  Node25 [label="PulseGenerator::PulseGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_generator.html#aff7b38fa92c5f1181cbeca42c62c7b21"];
+  Node23 -> Node26 [color="midnightblue",fontsize="10",style="solid"];
+  Node26 [label="PulseController::gotNewPulse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#ada3a07fc7a533e76d0d91e2e8c31e75e"];
+  Node26 -> Node27 [color="midnightblue",fontsize="10",style="solid"];
+  Node27 [label="PulseController::calcTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#aad89e956185b04ed12bd02056e4df743"];
+}

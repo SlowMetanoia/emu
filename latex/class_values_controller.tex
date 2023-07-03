@@ -1,0 +1,155 @@
+\hypertarget{class_values_controller}{}\section{Класс Values\+Controller}
+\label{class_values_controller}\index{Values\+Controller@{Values\+Controller}}
+
+
+{\ttfamily \#include $<$valuescontroller.\+h$>$}
+
+
+
+Граф наследования\+:Values\+Controller\+:
+% FIG 0
+
+
+Граф связей класса Values\+Controller\+:
+% FIG 1
+\subsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_values_controller_ad492dddd3ed3d3aea671ed2115ba4231}{publish\+Values} (double x)
+\end{DoxyCompactItemize}
+\subsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_values_controller_ab8b868daf6749f35165d7f0ebf4ae35e}{values\+Published} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_values_controller_a79c5f5459d0fa9c0ae201f7af9a21f89}{Values\+Controller} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_values_controller_a9d8f277bbf71b14581286225e81d4c93}{Values\+Controller} (\hyperlink{class_imitator_config}{Imitator\+Config} $\ast$config)
+\item 
+\hyperlink{class_bin_message}{Bin\+Message} $\ast$ \hyperlink{class_values_controller_a3ff8d09321924df6d04310463d0660c6}{compose\+Message} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_values_controller}{Values\+Controller} $\ast$ \hyperlink{class_values_controller_a2b7b09d37db8c1cf82d35024254b5628}{get\+Instance} ()
+\item 
+static \hyperlink{class_values_controller}{Values\+Controller} $\ast$ \hyperlink{class_values_controller_ae0d02102d635c83549ada9d9ed21d728}{init} (\hyperlink{class_imitator_config}{Imitator\+Config} $\ast$config)
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Vector$<$ \hyperlink{class_reg_generator}{Reg\+Generator} $\ast$ $>$ \hyperlink{class_values_controller_ae075adf59c65d6230c7b2caa41c768c5}{regs}
+\item 
+int \hyperlink{class_values_controller_abfd5066e990c480cd415979a208e6d91}{values\+Number}
+\item 
+\hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}{Scenario\+Type} \hyperlink{class_values_controller_abe823f9457bb23b60428a5c6ea7aeedb}{scenario}
+\end{DoxyCompactItemize}
+\subsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_values_controller}{Values\+Controller} $\ast$ \hyperlink{class_values_controller_a9b8eb343037a5c1a18f96d466da5a670}{controller} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_values_controller_a79c5f5459d0fa9c0ae201f7af9a21f89}\label{class_values_controller_a79c5f5459d0fa9c0ae201f7af9a21f89}} 
+\index{Values\+Controller@{Values\+Controller}!Values\+Controller@{Values\+Controller}}
+\index{Values\+Controller@{Values\+Controller}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{Values\+Controller()}{ValuesController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Values\+Controller\+::\+Values\+Controller (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Граф вызова функции\+:
+% FIG 2
+\mbox{\Hypertarget{class_values_controller_a9d8f277bbf71b14581286225e81d4c93}\label{class_values_controller_a9d8f277bbf71b14581286225e81d4c93}} 
+\index{Values\+Controller@{Values\+Controller}!Values\+Controller@{Values\+Controller}}
+\index{Values\+Controller@{Values\+Controller}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{Values\+Controller()}{ValuesController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Values\+Controller\+::\+Values\+Controller (\begin{DoxyParamCaption}\item[{\hyperlink{class_imitator_config}{Imitator\+Config} $\ast$}]{config }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 3
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_values_controller_a3ff8d09321924df6d04310463d0660c6}\label{class_values_controller_a3ff8d09321924df6d04310463d0660c6}} 
+\index{Values\+Controller@{Values\+Controller}!compose\+Message@{compose\+Message}}
+\index{compose\+Message@{compose\+Message}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{compose\+Message()}{composeMessage()}}
+{\footnotesize\ttfamily \hyperlink{class_bin_message}{Bin\+Message} $\ast$ Values\+Controller\+::compose\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 4
+Граф вызова функции\+:
+% FIG 5
+\mbox{\Hypertarget{class_values_controller_a2b7b09d37db8c1cf82d35024254b5628}\label{class_values_controller_a2b7b09d37db8c1cf82d35024254b5628}} 
+\index{Values\+Controller@{Values\+Controller}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{class_values_controller}{Values\+Controller} $\ast$ Values\+Controller\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Граф вызова функции\+:
+% FIG 6
+\mbox{\Hypertarget{class_values_controller_ae0d02102d635c83549ada9d9ed21d728}\label{class_values_controller_ae0d02102d635c83549ada9d9ed21d728}} 
+\index{Values\+Controller@{Values\+Controller}!init@{init}}
+\index{init@{init}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \hyperlink{class_values_controller}{Values\+Controller} $\ast$ Values\+Controller\+::init (\begin{DoxyParamCaption}\item[{\hyperlink{class_imitator_config}{Imitator\+Config} $\ast$}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Граф вызовов\+:
+% FIG 7
+Граф вызова функции\+:
+% FIG 8
+\mbox{\Hypertarget{class_values_controller_ad492dddd3ed3d3aea671ed2115ba4231}\label{class_values_controller_ad492dddd3ed3d3aea671ed2115ba4231}} 
+\index{Values\+Controller@{Values\+Controller}!publish\+Values@{publish\+Values}}
+\index{publish\+Values@{publish\+Values}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{publish\+Values}{publishValues}}
+{\footnotesize\ttfamily void Values\+Controller\+::publish\+Values (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Граф вызовов\+:
+% FIG 9
+Граф вызова функции\+:
+% FIG 10
+\mbox{\Hypertarget{class_values_controller_ab8b868daf6749f35165d7f0ebf4ae35e}\label{class_values_controller_ab8b868daf6749f35165d7f0ebf4ae35e}} 
+\index{Values\+Controller@{Values\+Controller}!values\+Published@{values\+Published}}
+\index{values\+Published@{values\+Published}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{values\+Published}{valuesPublished}}
+{\footnotesize\ttfamily void Values\+Controller\+::values\+Published (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Граф вызова функции\+:
+% FIG 11
+
+
+\subsection{Данные класса}
+\mbox{\Hypertarget{class_values_controller_a9b8eb343037a5c1a18f96d466da5a670}\label{class_values_controller_a9b8eb343037a5c1a18f96d466da5a670}} 
+\index{Values\+Controller@{Values\+Controller}!controller@{controller}}
+\index{controller@{controller}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \hyperlink{class_values_controller}{Values\+Controller} $\ast$ Values\+Controller\+::controller = nullptr\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_values_controller_ae075adf59c65d6230c7b2caa41c768c5}\label{class_values_controller_ae075adf59c65d6230c7b2caa41c768c5}} 
+\index{Values\+Controller@{Values\+Controller}!regs@{regs}}
+\index{regs@{regs}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{regs}{regs}}
+{\footnotesize\ttfamily Q\+Vector$<$\hyperlink{class_reg_generator}{Reg\+Generator}$\ast$$>$ Values\+Controller\+::regs}
+
+\mbox{\Hypertarget{class_values_controller_abe823f9457bb23b60428a5c6ea7aeedb}\label{class_values_controller_abe823f9457bb23b60428a5c6ea7aeedb}} 
+\index{Values\+Controller@{Values\+Controller}!scenario@{scenario}}
+\index{scenario@{scenario}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{scenario}{scenario}}
+{\footnotesize\ttfamily \hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}{Scenario\+Type} Values\+Controller\+::scenario}
+
+\mbox{\Hypertarget{class_values_controller_abfd5066e990c480cd415979a208e6d91}\label{class_values_controller_abfd5066e990c480cd415979a208e6d91}} 
+\index{Values\+Controller@{Values\+Controller}!values\+Number@{values\+Number}}
+\index{values\+Number@{values\+Number}!Values\+Controller@{Values\+Controller}}
+\subsubsection{\texorpdfstring{values\+Number}{valuesNumber}}
+{\footnotesize\ttfamily int Values\+Controller\+::values\+Number}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{valuescontroller_8h}{valuescontroller.\+h}\item 
+\hyperlink{valuescontroller_8cpp}{valuescontroller.\+cpp}\end{DoxyCompactItemize}

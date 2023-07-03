@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Imitator: Исходный файл configreader.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Imitator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">configreader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="configreader_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CONFIGREADER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CONFIGREADER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QJsonDocument&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QJsonObject&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QJsonArray&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//#include &lt;QDebug&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_random_types_8h.html">RandomTypes.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imitatorconfig_8h.html">imitatorconfig.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_configurator.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_configurator.html">Configurator</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_configurator.html#a7ec0953cb82dd1ac0c9e0cf358a9ad8c">   18</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_configurator.html">Configurator</a>* <a class="code" href="class_configurator.html#a7ec0953cb82dd1ac0c9e0cf358a9ad8c">configurator</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_configurator.html">Configurator</a>* <a class="code" href="class_configurator.html#a7138afa6d06c32b2e43495d108741c9f">getIntance</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_configurator.html#ac0dcebf9bc248dd7473ee442a6822ca3">Configurator</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_imitator_config.html">ImitatorConfig</a>* <a class="code" href="class_configurator.html#a400f7c5c3362fcab86051b014e894544">readConfig</a>(QString fileName);</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_configurator.html#ab443cd9fb6f7abff1c05f76689ae469a">   22</a></span>&#160;    <a class="code" href="class_imitator_config.html">ImitatorConfig</a>* <a class="code" href="class_configurator.html#ab443cd9fb6f7abff1c05f76689ae469a">config</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_configurator.html#a6afc1da57117b7b9bad4dfefe98e8d63">createConfig</a>(QString fileName);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;signals:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // CONFIGREADER_H</span></div><div class="ttc" id="class_configurator_html_ac0dcebf9bc248dd7473ee442a6822ca3"><div class="ttname"><a href="class_configurator.html#ac0dcebf9bc248dd7473ee442a6822ca3">Configurator::Configurator</a></div><div class="ttdeci">Configurator(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> configreader.cpp:4</div></div>
+<div class="ttc" id="class_configurator_html_a7ec0953cb82dd1ac0c9e0cf358a9ad8c"><div class="ttname"><a href="class_configurator.html#a7ec0953cb82dd1ac0c9e0cf358a9ad8c">Configurator::configurator</a></div><div class="ttdeci">static Configurator * configurator</div><div class="ttdef"><b>Definition:</b> configreader.h:18</div></div>
+<div class="ttc" id="class_configurator_html"><div class="ttname"><a href="class_configurator.html">Configurator</a></div><div class="ttdef"><b>Definition:</b> configreader.h:14</div></div>
+<div class="ttc" id="class_configurator_html_a7138afa6d06c32b2e43495d108741c9f"><div class="ttname"><a href="class_configurator.html#a7138afa6d06c32b2e43495d108741c9f">Configurator::getIntance</a></div><div class="ttdeci">static Configurator * getIntance()</div><div class="ttdef"><b>Definition:</b> configreader.cpp:9</div></div>
+<div class="ttc" id="class_configurator_html_a6afc1da57117b7b9bad4dfefe98e8d63"><div class="ttname"><a href="class_configurator.html#a6afc1da57117b7b9bad4dfefe98e8d63">Configurator::createConfig</a></div><div class="ttdeci">void createConfig(QString fileName)</div><div class="ttdef"><b>Definition:</b> configreader.cpp:94</div></div>
+<div class="ttc" id="class_configurator_html_a400f7c5c3362fcab86051b014e894544"><div class="ttname"><a href="class_configurator.html#a400f7c5c3362fcab86051b014e894544">Configurator::readConfig</a></div><div class="ttdeci">ImitatorConfig * readConfig(QString fileName)</div><div class="ttdef"><b>Definition:</b> configreader.cpp:16</div></div>
+<div class="ttc" id="_random_types_8h_html"><div class="ttname"><a href="_random_types_8h.html">RandomTypes.h</a></div></div>
+<div class="ttc" id="class_configurator_html_ab443cd9fb6f7abff1c05f76689ae469a"><div class="ttname"><a href="class_configurator.html#ab443cd9fb6f7abff1c05f76689ae469a">Configurator::config</a></div><div class="ttdeci">ImitatorConfig * config</div><div class="ttdef"><b>Definition:</b> configreader.h:22</div></div>
+<div class="ttc" id="imitatorconfig_8h_html"><div class="ttname"><a href="imitatorconfig_8h.html">imitatorconfig.h</a></div></div>
+<div class="ttc" id="class_imitator_config_html"><div class="ttname"><a href="class_imitator_config.html">ImitatorConfig</a></div><div class="ttdef"><b>Definition:</b> imitatorconfig.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

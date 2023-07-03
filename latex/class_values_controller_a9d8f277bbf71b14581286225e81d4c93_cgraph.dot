@@ -1,0 +1,25 @@
+digraph "ValuesController::ValuesController"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="ValuesController::Values\lController",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PulseController::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#ac7e6d3cb62727c89da948551d4cdce01"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="PulseController::PulseController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#aa17fed7626e6483413beff386f0e532a"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="PulseGenerator::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_generator.html#ace9e6e44b3fcd3103b65805d44261ced"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="PulseGenerator::PulseGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_generator.html#aff7b38fa92c5f1181cbeca42c62c7b21"];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="PulseController::gotNewPulse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#ada3a07fc7a533e76d0d91e2e8c31e75e"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="PulseController::calcTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#aad89e956185b04ed12bd02056e4df743"];
+  Node5 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="ValuesController::publish\lValues",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_values_controller.html#ad492dddd3ed3d3aea671ed2115ba4231"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="ValuesController::compose\lMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_values_controller.html#a3ff8d09321924df6d04310463d0660c6"];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="BinMessage::addValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bin_message.html#a47cc1e9c538f05361522883989ec3d96"];
+}

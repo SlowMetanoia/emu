@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Imitator: Исходный файл reggenerator.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Imitator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">reggenerator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="reggenerator_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef REGGENERATOR_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define REGGENERATOR_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;exprtk.hpp&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="registrconfig_8h.html">registrconfig.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_random_types_8h.html">RandomTypes.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="valuegenerator_8h.html">valuegenerator.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="reggenerator_8h.html#a5b17130e77047ba058dcea28131d0161">   14</a></span>&#160;<span class="keyword">typedef</span> exprtk::symbol_table&lt;double&gt; <a class="code" href="reggenerator_8h.html#a5b17130e77047ba058dcea28131d0161">symbol_table_t</a>;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="reggenerator_8h.html#af27600befe001c40c3fe341f6fafc956">   15</a></span>&#160;<span class="keyword">typedef</span> exprtk::expression&lt;double&gt;   <a class="code" href="reggenerator_8h.html#af27600befe001c40c3fe341f6fafc956">expression_t</a>;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="reggenerator_8h.html#a2ddfba8eb257202f4bc443b7f04cd012">   16</a></span>&#160;<span class="keyword">typedef</span> exprtk::parser&lt;double&gt;       <a class="code" href="reggenerator_8h.html#a2ddfba8eb257202f4bc443b7f04cd012">parser_t</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_reg_generator.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_reg_generator.html">RegGenerator</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_reg_generator.html">RegGenerator</a>(<a class="code" href="class_registr_config.html">RegistrConfig</a> rc);</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_reg_generator.html#ab0d02ad51a8bf660fdf2c2089c5f4933">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_reg_generator.html#ab0d02ad51a8bf660fdf2c2089c5f4933">regNumber</a>;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_reg_generator.html#aabe826a51b5b4917754f94264f601ea8">   25</a></span>&#160;    <a class="code" href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1">ValueType</a> <a class="code" href="class_reg_generator.html#aabe826a51b5b4917754f94264f601ea8">valueType</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_reg_generator.html#ad557c58539b7d84e7667d0259d739000">   26</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_reg_generator.html#ad557c58539b7d84e7667d0259d739000">value</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_reg_generator.html#a091fffa8ce1f44ca378d8adafac69053">   27</a></span>&#160;    <a class="code" href="class_value_generator.html">ValueGenerator</a>* <a class="code" href="class_reg_generator.html#a091fffa8ce1f44ca378d8adafac69053">generator</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">double</span> update(<span class="keywordtype">double</span> x);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // REGGENERATOR_H</span></div><div class="ttc" id="_random_types_8h_html_ad9971b6ef33e02ba2c75d19c1d2518a1"><div class="ttname"><a href="_random_types_8h.html#ad9971b6ef33e02ba2c75d19c1d2518a1">ValueType</a></div><div class="ttdeci">ValueType</div><div class="ttdef"><b>Definition:</b> RandomTypes.h:19</div></div>
+<div class="ttc" id="class_registr_config_html"><div class="ttname"><a href="class_registr_config.html">RegistrConfig</a></div><div class="ttdef"><b>Definition:</b> registrconfig.h:12</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_reg_generator_html"><div class="ttname"><a href="class_reg_generator.html">RegGenerator</a></div><div class="ttdef"><b>Definition:</b> reggenerator.h:20</div></div>
+<div class="ttc" id="class_reg_generator_html_a091fffa8ce1f44ca378d8adafac69053"><div class="ttname"><a href="class_reg_generator.html#a091fffa8ce1f44ca378d8adafac69053">RegGenerator::generator</a></div><div class="ttdeci">ValueGenerator * generator</div><div class="ttdef"><b>Definition:</b> reggenerator.h:27</div></div>
+<div class="ttc" id="class_reg_generator_html_ab0d02ad51a8bf660fdf2c2089c5f4933"><div class="ttname"><a href="class_reg_generator.html#ab0d02ad51a8bf660fdf2c2089c5f4933">RegGenerator::regNumber</a></div><div class="ttdeci">int regNumber</div><div class="ttdef"><b>Definition:</b> reggenerator.h:24</div></div>
+<div class="ttc" id="class_value_generator_html"><div class="ttname"><a href="class_value_generator.html">ValueGenerator</a></div><div class="ttdef"><b>Definition:</b> valuegenerator.h:19</div></div>
+<div class="ttc" id="reggenerator_8h_html_af27600befe001c40c3fe341f6fafc956"><div class="ttname"><a href="reggenerator_8h.html#af27600befe001c40c3fe341f6fafc956">expression_t</a></div><div class="ttdeci">exprtk::expression&lt; double &gt; expression_t</div><div class="ttdef"><b>Definition:</b> reggenerator.h:15</div></div>
+<div class="ttc" id="reggenerator_8h_html_a2ddfba8eb257202f4bc443b7f04cd012"><div class="ttname"><a href="reggenerator_8h.html#a2ddfba8eb257202f4bc443b7f04cd012">parser_t</a></div><div class="ttdeci">exprtk::parser&lt; double &gt; parser_t</div><div class="ttdef"><b>Definition:</b> reggenerator.h:16</div></div>
+<div class="ttc" id="class_reg_generator_html_aabe826a51b5b4917754f94264f601ea8"><div class="ttname"><a href="class_reg_generator.html#aabe826a51b5b4917754f94264f601ea8">RegGenerator::valueType</a></div><div class="ttdeci">ValueType valueType</div><div class="ttdef"><b>Definition:</b> reggenerator.h:25</div></div>
+<div class="ttc" id="valuegenerator_8h_html"><div class="ttname"><a href="valuegenerator_8h.html">valuegenerator.h</a></div></div>
+<div class="ttc" id="registrconfig_8h_html"><div class="ttname"><a href="registrconfig_8h.html">registrconfig.h</a></div></div>
+<div class="ttc" id="_random_types_8h_html"><div class="ttname"><a href="_random_types_8h.html">RandomTypes.h</a></div></div>
+<div class="ttc" id="class_reg_generator_html_ad557c58539b7d84e7667d0259d739000"><div class="ttname"><a href="class_reg_generator.html#ad557c58539b7d84e7667d0259d739000">RegGenerator::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definition:</b> reggenerator.h:26</div></div>
+<div class="ttc" id="reggenerator_8h_html_a5b17130e77047ba058dcea28131d0161"><div class="ttname"><a href="reggenerator_8h.html#a5b17130e77047ba058dcea28131d0161">symbol_table_t</a></div><div class="ttdeci">exprtk::symbol_table&lt; double &gt; symbol_table_t</div><div class="ttdef"><b>Definition:</b> reggenerator.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

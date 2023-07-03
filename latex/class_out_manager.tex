@@ -1,0 +1,164 @@
+\hypertarget{class_out_manager}{}\section{Класс Out\+Manager}
+\label{class_out_manager}\index{Out\+Manager@{Out\+Manager}}
+
+
+{\ttfamily \#include $<$outmanager.\+h$>$}
+
+
+
+Граф наследования\+:Out\+Manager\+:
+% FIG 0
+
+
+Граф связей класса Out\+Manager\+:
+% FIG 1
+\subsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_out_manager_a04f085f9812ba6d105a8d13344f1ba8f}{write} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_out_manager_ab33060397abec259ec6579469aef1c8e}{Out\+Manager} (Q\+Object $\ast$parent=nullptr)
+\item 
+void \hyperlink{class_out_manager_a754a7835198dacb9a0dffcc772cdd454}{write\+Socket} ()
+\item 
+void \hyperlink{class_out_manager_a72350f29d5beb0ddcbf14071b4d609a8}{write\+Journal} ()
+\item 
+void \hyperlink{class_out_manager_aa04ed17d925a73577e08152120e50339}{write\+Modbus} ()
+\item 
+void \hyperlink{class_out_manager_a58e0db7547fda26579600c443abc7af4}{stop\+Writing} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_out_manager}{Out\+Manager} $\ast$ \hyperlink{class_out_manager_a25e2f6c90af51feae79e8233d9e746cd}{get\+Instance} ()
+\item 
+static void \hyperlink{class_out_manager_ab7c61a46bbb2cf29731a408ab5eb2b83}{init} (\hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}{Scenario\+Type} \hyperlink{class_out_manager_ae9c258658580c48791cff6e5c3ad62af}{scenario})
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}{Scenario\+Type} \hyperlink{class_out_manager_ae9c258658580c48791cff6e5c3ad62af}{scenario}
+\item 
+\hyperlink{class_journal_writer}{Journal\+Writer} $\ast$ \hyperlink{class_out_manager_a06df9af523b794582b5acb28906c811c}{journal\+Writer}
+\item 
+\hyperlink{class_socket_writer}{Socket\+Writer} $\ast$ \hyperlink{class_out_manager_ad278fd7fd56625176399bedfee84a4bc}{socket\+Writer}
+\end{DoxyCompactItemize}
+\subsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_out_manager}{Out\+Manager} $\ast$ \hyperlink{class_out_manager_a1b90e2e00620117028b2a14499b80f43}{manager} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_out_manager_ab33060397abec259ec6579469aef1c8e}\label{class_out_manager_ab33060397abec259ec6579469aef1c8e}} 
+\index{Out\+Manager@{Out\+Manager}!Out\+Manager@{Out\+Manager}}
+\index{Out\+Manager@{Out\+Manager}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{Out\+Manager()}{OutManager()}}
+{\footnotesize\ttfamily Out\+Manager\+::\+Out\+Manager (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Граф вызовов\+:
+% FIG 2
+Граф вызова функции\+:
+% FIG 3
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_out_manager_a25e2f6c90af51feae79e8233d9e746cd}\label{class_out_manager_a25e2f6c90af51feae79e8233d9e746cd}} 
+\index{Out\+Manager@{Out\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{class_out_manager}{Out\+Manager} $\ast$ Out\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Граф вызовов\+:
+% FIG 4
+Граф вызова функции\+:
+% FIG 5
+\mbox{\Hypertarget{class_out_manager_ab7c61a46bbb2cf29731a408ab5eb2b83}\label{class_out_manager_ab7c61a46bbb2cf29731a408ab5eb2b83}} 
+\index{Out\+Manager@{Out\+Manager}!init@{init}}
+\index{init@{init}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Out\+Manager\+::init (\begin{DoxyParamCaption}\item[{\hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}{Scenario\+Type}}]{scenario }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Граф вызовов\+:
+% FIG 6
+Граф вызова функции\+:
+% FIG 7
+\mbox{\Hypertarget{class_out_manager_a58e0db7547fda26579600c443abc7af4}\label{class_out_manager_a58e0db7547fda26579600c443abc7af4}} 
+\index{Out\+Manager@{Out\+Manager}!stop\+Writing@{stop\+Writing}}
+\index{stop\+Writing@{stop\+Writing}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{stop\+Writing()}{stopWriting()}}
+{\footnotesize\ttfamily void Out\+Manager\+::stop\+Writing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_out_manager_a04f085f9812ba6d105a8d13344f1ba8f}\label{class_out_manager_a04f085f9812ba6d105a8d13344f1ba8f}} 
+\index{Out\+Manager@{Out\+Manager}!write@{write}}
+\index{write@{write}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{write}{write}}
+{\footnotesize\ttfamily void Out\+Manager\+::write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Граф вызовов\+:
+% FIG 8
+Граф вызова функции\+:
+% FIG 9
+\mbox{\Hypertarget{class_out_manager_a72350f29d5beb0ddcbf14071b4d609a8}\label{class_out_manager_a72350f29d5beb0ddcbf14071b4d609a8}} 
+\index{Out\+Manager@{Out\+Manager}!write\+Journal@{write\+Journal}}
+\index{write\+Journal@{write\+Journal}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{write\+Journal()}{writeJournal()}}
+{\footnotesize\ttfamily void Out\+Manager\+::write\+Journal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 10
+Граф вызова функции\+:
+% FIG 11
+\mbox{\Hypertarget{class_out_manager_aa04ed17d925a73577e08152120e50339}\label{class_out_manager_aa04ed17d925a73577e08152120e50339}} 
+\index{Out\+Manager@{Out\+Manager}!write\+Modbus@{write\+Modbus}}
+\index{write\+Modbus@{write\+Modbus}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{write\+Modbus()}{writeModbus()}}
+{\footnotesize\ttfamily void Out\+Manager\+::write\+Modbus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_out_manager_a754a7835198dacb9a0dffcc772cdd454}\label{class_out_manager_a754a7835198dacb9a0dffcc772cdd454}} 
+\index{Out\+Manager@{Out\+Manager}!write\+Socket@{write\+Socket}}
+\index{write\+Socket@{write\+Socket}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{write\+Socket()}{writeSocket()}}
+{\footnotesize\ttfamily void Out\+Manager\+::write\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 12
+Граф вызова функции\+:
+% FIG 13
+
+
+\subsection{Данные класса}
+\mbox{\Hypertarget{class_out_manager_a06df9af523b794582b5acb28906c811c}\label{class_out_manager_a06df9af523b794582b5acb28906c811c}} 
+\index{Out\+Manager@{Out\+Manager}!journal\+Writer@{journal\+Writer}}
+\index{journal\+Writer@{journal\+Writer}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{journal\+Writer}{journalWriter}}
+{\footnotesize\ttfamily \hyperlink{class_journal_writer}{Journal\+Writer}$\ast$ Out\+Manager\+::journal\+Writer}
+
+\mbox{\Hypertarget{class_out_manager_a1b90e2e00620117028b2a14499b80f43}\label{class_out_manager_a1b90e2e00620117028b2a14499b80f43}} 
+\index{Out\+Manager@{Out\+Manager}!manager@{manager}}
+\index{manager@{manager}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \hyperlink{class_out_manager}{Out\+Manager} $\ast$ Out\+Manager\+::manager = nullptr\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_out_manager_ae9c258658580c48791cff6e5c3ad62af}\label{class_out_manager_ae9c258658580c48791cff6e5c3ad62af}} 
+\index{Out\+Manager@{Out\+Manager}!scenario@{scenario}}
+\index{scenario@{scenario}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{scenario}{scenario}}
+{\footnotesize\ttfamily \hyperlink{_random_types_8h_ae8f073eec97d33cf9783ecbe50531dfd}{Scenario\+Type} Out\+Manager\+::scenario}
+
+\mbox{\Hypertarget{class_out_manager_ad278fd7fd56625176399bedfee84a4bc}\label{class_out_manager_ad278fd7fd56625176399bedfee84a4bc}} 
+\index{Out\+Manager@{Out\+Manager}!socket\+Writer@{socket\+Writer}}
+\index{socket\+Writer@{socket\+Writer}!Out\+Manager@{Out\+Manager}}
+\subsubsection{\texorpdfstring{socket\+Writer}{socketWriter}}
+{\footnotesize\ttfamily \hyperlink{class_socket_writer}{Socket\+Writer}$\ast$ Out\+Manager\+::socket\+Writer}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{outmanager_8h}{outmanager.\+h}\item 
+\hyperlink{outmanager_8cpp}{outmanager.\+cpp}\end{DoxyCompactItemize}

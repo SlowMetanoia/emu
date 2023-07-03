@@ -1,0 +1,24 @@
+digraph "PulseController::calcTime"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node13 [label="PulseController::calcTime",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="PulseController::gotNewPulse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#ada3a07fc7a533e76d0d91e2e8c31e75e"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="PulseController::PulseController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#aa17fed7626e6483413beff386f0e532a"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="PulseController::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pulse_controller.html#ac7e6d3cb62727c89da948551d4cdce01"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="CLIManager::CLIManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_l_i_manager.html#aa6a57394f40679877ef36f4e8fbcd2bf"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="CLIManager::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_l_i_manager.html#a30fd449e0fea9cf14f56bf1ae17934ce"];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Initer::GeneralInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_initer.html#a088e4b7a4395c32a5bbe932c3db35054"];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",tooltip="main "];
+  Node16 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node21 [label="ValuesController::Values\lController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_values_controller.html#a9d8f277bbf71b14581286225e81d4c93"];
+}

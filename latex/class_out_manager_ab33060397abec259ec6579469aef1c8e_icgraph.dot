@@ -1,0 +1,16 @@
+digraph "OutManager::OutManager"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node13 [label="OutManager::OutManager",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="OutManager::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#a25e2f6c90af51feae79e8233d9e746cd"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Initer::GeneralInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_initer.html#a088e4b7a4395c32a5bbe932c3db35054"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",tooltip="main "];
+  Node14 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="OutManager::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#ab7c61a46bbb2cf29731a408ab5eb2b83"];
+  Node17 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

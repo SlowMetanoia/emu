@@ -1,0 +1,22 @@
+digraph "SocketWriter::write"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node25 [label="SocketWriter::write",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node25 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="OutManager::writeSocket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#a754a7835198dacb9a0dffcc772cdd454"];
+  Node26 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="OutManager::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#a04f085f9812ba6d105a8d13344f1ba8f"];
+  Node27 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="OutManager::OutManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#ab33060397abec259ec6579469aef1c8e"];
+  Node28 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="OutManager::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#a25e2f6c90af51feae79e8233d9e746cd"];
+  Node29 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="Initer::GeneralInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_initer.html#a088e4b7a4395c32a5bbe932c3db35054"];
+  Node30 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",tooltip="main "];
+  Node29 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="OutManager::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_out_manager.html#ab7c61a46bbb2cf29731a408ab5eb2b83"];
+  Node32 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
